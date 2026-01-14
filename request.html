@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Custom Design | Shop Boujee with Imade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="back">Home</a>
+  <img src="images/Logo1.jpg" class="logo" alt="Shop Boujee with Imade">
+</header>
+
+<section class="request fade">
+  <h2>Request a Custom Design</h2>
+  <p class="note">
+    All items are custom made. Please describe what you want and attach a reference image if available.
+  </p>
+
+  <form id="requestForm">
+    <input
+      type="text"
+      id="name"
+      placeholder="Your name"
+      required
+    >
+
+    <input
+      type="text"
+      id="product"
+      placeholder="Product type (Accessories, Glasses, Wristwatches)"
+      required
+    >
+
+    <textarea
+      id="details"
+      placeholder="Describe the design you want"
+      rows="4"
+      required
+    ></textarea>
+
+    <label class="upload">
+      Upload reference image (optional)
+      <input type="file" id="image" accept="image/*">
+    </label>
+
+    <p class="upload-note">
+      After WhatsApp opens, please send the image directly in the chat.
+    </p>
+
+    <button type="submit">Continue to WhatsApp</button>
+  </form>
+</section>
+
+<footer>
+  © Shop Boujee with Imade — Crafted luxury, made on request
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

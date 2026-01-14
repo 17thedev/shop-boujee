@@ -1,18 +1,41 @@
-document.getElementById("requestForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+// Fade animations
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
 
-  const name = document.getElementById("customerName").value;
-  const type = document.getElementById("productType").value;
-  const desc = document.getElementById("description").value;
+document.querySelectorAll(".fade").forEach(el => observer.observe(el));
 
-  const phone = "2348102578234";
+// Autofill product type from URL
+const params = new URLSearchParams(window.location.search);
+const productField = document.getElementById("product");
 
-  let message =
-    "Hello Shop Boujee with Imade,%0A%0A" +
-    "Customer Name: " + name + "%0A" +
-    "Product Type: " + type + "%0A" +
-    "Request Details: " + desc + "%0A%0A" +
-    "I understand these are sample designs. I will send my reference image in this chat.";
+if (productField && params.get("type")) {
+  productField.value = params.get("type");
+}
 
-  window.open("https://wa.me/" + phone + "?text=" + message, "_blank");
-});
+// WhatsApp request handling
+const form = document.getElementById("requestForm");
+
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const product = document.getElementById("product").value.trim();
+    const details = document.getElementById("details").value.trim();
+
+    const message =
+      `Hello, my name is ${name}.\n` +
+      `I would like a custom ${product}.\n` +
+      `Details: ${details}`;
+
+    const whatsappURL =
+      `https://wa.me/2348102578234?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+  });
+}

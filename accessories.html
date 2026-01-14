@@ -9,44 +9,25 @@
 <body>
 
 <header class="header">
-  <a href="index.html" class="back">← Home</a>
+  <a href="index.html" class="back">Home</a>
   <img src="images/Logo1.jpg" class="logo">
 </header>
 
-<section class="samples">
+<section class="product fade">
   <h2>Accessories</h2>
-  <p class="note">Displayed designs are samples only.</p>
+  <p class="note">Displayed designs are samples only</p>
 
-  <div class="row">
+  <div class="slider">
     <img src="images/A1.jpg"><img src="images/A2.jpg"><img src="images/A3.jpg">
     <img src="images/A4.jpg"><img src="images/A5.jpg"><img src="images/A6.jpg">
     <img src="images/A7.jpg"><img src="images/A8.jpg"><img src="images/A9.jpg">
     <img src="images/A10.jpg">
   </div>
+
+  <a href="request.html?type=Accessories" class="request-btn">Request Custom Accessories</a>
 </section>
 
-<section class="request">
-  <h2>Request a Custom Accessory</h2>
-
-  <form id="requestForm">
-    <input type="text" id="customerName" placeholder="Your Name" required>
-    <input type="hidden" id="productType" value="Accessories">
-
-    <textarea id="description" placeholder="Describe what you want" required></textarea>
-
-    <label class="upload">
-      Upload Reference Image (optional)
-      <input type="file" id="imageInput" accept="image/*">
-    </label>
-
-    <p class="upload-note">
-      After WhatsApp opens, please send your reference image directly in the chat.
-    </p>
-
-    <button type="submit">Continue to WhatsApp</button>
-  </form>
-</section>
-
+<footer>© Shop Boujee with Imade</footer>
 <script src="script.js"></script>
 </body>
 </html>

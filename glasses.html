@@ -6,46 +6,71 @@
   <title>Glasses | Shop Boujee</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
-  <a href="index.html" class="back">← Home</a>
-  <img src="images/Logo1.jpg" class="logo">
-</header>
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="back">Home</a>
+    <img src="images/logo1.jpg" alt="Shop Boujee Logo" class="logo">
+  </header>
 
-<section class="samples">
-  <h2>Glasses</h2>
-  <p class="note">Displayed designs are samples only.</p>
+  <!-- Glasses Display Section -->
+  <section class="samples">
+    <h2>Glasses</h2>
+    <p class="note">Displayed designs are samples only.</p>
 
-  <div class="row">
-    <img src="images/G1.jpg">
-    <img src="images/G2.jpg">
-    <img src="images/G3.jpg">
-  </div>
-</section>
+    <div class="row">
+      <img src="images/G1.jpg" alt="Glasses design">
+      <img src="images/G2.jpg" alt="Glasses design">
+      <img src="images/G3.jpg" alt="Glasses design">
+      <img src="images/G4.jpg" alt="Glasses design">
+      <img src="images/G5.jpg" alt="Glasses design">
+      <img src="images/G6.jpg" alt="Glasses design">
+      <img src="images/G7.jpg" alt="Glasses design">
+      <img src="images/G8.jpg" alt="Glasses design">
+      <img src="images/G9.jpg" alt="Glasses design">
+    </div>
+  </section>
 
-<section class="request">
-  <h2>Request Custom Glasses</h2>
+  <!-- Custom Request Section -->
+  <section class="request">
+    <h2>Request Custom Glasses</h2>
 
-  <form id="requestForm">
-    <input type="text" id="customerName" placeholder="Your Name" required>
-    <input type="hidden" id="productType" value="Glasses">
+    <form id="requestForm">
+      <input
+        type="text"
+        id="customerName"
+        placeholder="Your name"
+        required
+      >
 
-    <textarea id="description" placeholder="Describe what you want" required></textarea>
+      <input
+        type="hidden"
+        id="productType"
+        value="Glasses"
+      >
 
-    <label class="upload">
-      Upload Reference Image (optional)
-      <input type="file" id="imageInput" accept="image/*">
-    </label>
+      <textarea
+        id="description"
+        placeholder="Describe what you want"
+        required
+      ></textarea>
 
-    <p class="upload-note">
-      After WhatsApp opens, please send your reference image directly in the chat.
-    </p>
+      <label class="upload">
+        Upload reference image (optional)
+        <input type="file" id="imageInput" accept="image/*">
+      </label>
 
-    <button type="submit">Continue to WhatsApp</button>
-  </form>
-</section>
+      <p class="upload-note">
+        After WhatsApp opens, please send your reference image directly in the chat.
+      </p>
 
-<script src="script.js"></script>
+      <button type="submit">Continue to WhatsApp</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+
 </body>
 </html>

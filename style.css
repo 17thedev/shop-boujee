@@ -172,3 +172,33 @@ footer {
   color: #888;
   border-top: 1px solid #1c1c1c;
 }
+.tiktok-section {
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid #1c1c1c;
+}
+
+.tiktok-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tiktok-icon {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+}
+
+.tiktok-link:hover {
+  color: var(--orange);
+}
+.tiktok-icon {
+  width: 28px;
+  height: 28px;
+  filter: brightness(1.4);
+}

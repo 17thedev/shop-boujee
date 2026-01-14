@@ -26,11 +26,22 @@
 
 <section class="request">
   <h2>Request a Custom Watch</h2>
+
   <form id="requestForm">
     <input type="text" id="customerName" placeholder="Your Name" required>
     <input type="hidden" id="productType" value="Wristwatches">
+
     <textarea id="description" placeholder="Describe what you want" required></textarea>
-    <input type="file" id="imageInput" accept="image/*">
+
+    <label class="upload">
+      Upload Reference Image (optional)
+      <input type="file" id="imageInput" accept="image/*">
+    </label>
+
+    <p class="upload-note">
+      After WhatsApp opens, please send your reference image directly in the chat.
+    </p>
+
     <button type="submit">Continue to WhatsApp</button>
   </form>
 </section>

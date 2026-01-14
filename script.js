@@ -8,11 +8,11 @@ document.getElementById("requestForm").addEventListener("submit", function (e) {
   const phone = "2348102578234";
 
   let message =
-    "Hello Shop Boujee,%0A%0A" +
+    "Hello Shop Boujee with Imade,%0A%0A" +
     "Customer Name: " + name + "%0A" +
     "Product Type: " + type + "%0A" +
     "Request Details: " + desc + "%0A%0A" +
-    "I understand the displayed products are samples only and I am requesting a custom design.";
+    "I understand these are sample designs. I will send my reference image in this chat.";
 
   window.open("https://wa.me/" + phone + "?text=" + message, "_blank");
 });

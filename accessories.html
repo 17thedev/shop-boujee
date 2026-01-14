@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessories | Shop Boujee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="back">← Home</a>
+  <img src="images/Logo1.jpg" class="logo">
+</header>
+
+<section class="samples">
+  <h2>Accessories</h2>
+  <p class="note">Displayed designs are samples only.</p>
+
+  <div class="row">
+    <img src="images/A1.jpg"><img src="images/A2.jpg"><img src="images/A3.jpg">
+    <img src="images/A4.jpg"><img src="images/A5.jpg"><img src="images/A6.jpg">
+    <img src="images/A7.jpg"><img src="images/A8.jpg"><img src="images/A9.jpg">
+    <img src="images/A10.jpg">
+  </div>
+</section>
+
+<section class="request">
+  <h2>Request a Custom Accessory</h2>
+  <form id="requestForm">
+    <input type="text" id="customerName" placeholder="Your Name" required>
+    <input type="hidden" id="productType" value="Accessories">
+    <textarea id="description" placeholder="Describe what you want" required></textarea>
+    <input type="file" id="imageInput" accept="image/*">
+    <button type="submit">Continue to WhatsApp</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

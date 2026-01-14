@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glasses | Shop Boujee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="back">← Home</a>
+  <img src="images/Logo1.jpg" class="logo">
+</header>
+
+<section class="samples">
+  <h2>Glasses</h2>
+  <p class="note">Displayed designs are samples only.</p>
+
+  <div class="row">
+    <img src="images/G1.jpg">
+    <img src="images/G2.jpg">
+    <img src="images/G3.jpg">
+  </div>
+</section>
+
+<section class="request">
+  <h2>Request Custom Glasses</h2>
+  <form id="requestForm">
+    <input type="text" id="customerName" placeholder="Your Name" required>
+    <input type="hidden" id="productType" value="Glasses">
+    <textarea id="description" placeholder="Describe what you want" required></textarea>
+    <input type="file" id="imageInput" accept="image/*">
+    <button type="submit">Continue to WhatsApp</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -202,3 +202,21 @@ footer {
   height: 28px;
   filter: brightness(1.4);
 }
+.tiktok-icon {
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+}
+.tiktok-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tiktok-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: var(--text);
+  text-decoration: none;
+}
